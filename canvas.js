@@ -45,8 +45,8 @@ class Pendulum{
 function init() {
     ctx = canvas.getContext("2d");
     curve = [];
-    p1 = new Pendulum(canvas.width/2, canvas.height/12, canvas.height*(6/12)-60, 20, ang1);
-    p2 = new Pendulum(p1.x+p1.length*Math.sin(p1.angle), p1.y+p1.length*Math.cos(p1.angle), canvas.height*(6/12)-60, 20, ang2);
+    p1 = new Pendulum(canvas.width/2, canvas.height/12, canvas.height*(5/12), 20, ang1);
+    p2 = new Pendulum(p1.x+p1.length*Math.sin(p1.angle), p1.y+p1.length*Math.cos(p1.angle), canvas.height*(5/12), 20, ang2);
     curve.push({x:p2.x+p2.length*sin(p2.angle), y:p2.y+p2.length*cos(p2.angle)});
 }
 
